@@ -1,20 +1,20 @@
+import AppLogo from './AppLogo'
 import Button from './Button'
 import { Logo, LogoLink, Nav } from './styled/NavBar.styled'
 
 const NavBar = () => {
   return (
     <Nav>
-        <LogoLink href='index.html'>
-            <Logo src="images/quill.svg" alt="quill logo" />
-        </LogoLink>
+        
+        <AppLogo href='index.html' src="images/quill.svg" alt="quill logo" />
         <ul>
             <li>
-                <Button $variant={"primary-outline"} href={"login.html"}>
+                <Button $variant="primary-outline" $href="login.html">
                     Login
                 </Button>
             </li>
             <li>
-                <Button $variant={"primary"} href={"register.html"}>
+                <Button $variant="primary" $href="register.html">
                     Register
                 </Button>
             </li>
