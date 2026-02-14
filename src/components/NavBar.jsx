@@ -1,6 +1,6 @@
 import AppLogo from './AppLogo'
 import Button from './Button'
-import { Logo, LogoLink, Nav } from './styled/NavBar.styled'
+import { Nav } from './styled/NavBar.styled'
 
 const NavBar = () => {
   return (
