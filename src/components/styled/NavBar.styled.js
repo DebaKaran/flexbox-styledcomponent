@@ -6,5 +6,10 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img`
     width: 100px;
+
+`;
+
+export const LogoLink = styled.a`
+  display: inline-block;
 `;
 
