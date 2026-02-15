@@ -1,5 +1,6 @@
 import AppLogo from './AppLogo'
 import Button from './Button'
+import { ActionItem, ActionList } from './styled/ActionList.styled'
 import { Nav } from './styled/NavBar.styled'
 
 const NavBar = () => {
@@ -7,18 +8,18 @@ const NavBar = () => {
     <Nav>
         
         <AppLogo href='index.html' src="images/quill.svg" alt="quill logo" />
-        <ul>
-            <li>
-                <Button variant="primary-outline" href="login.html">
+        <ActionList>
+            <ActionItem>
+              <Button variant="primary-outline" href="login.html">
                     Login
-                </Button>
-            </li>
-            <li>
-                <Button variant="primary" href="register.html">
+              </Button>
+            </ActionItem>
+            <ActionItem>
+              <Button variant="primary" href="register.html">
                     Register
-                </Button>
-            </li>
-        </ul>
+              </Button>
+            </ActionItem>
+        </ActionList>
     </Nav>
   )
 }
