@@ -11,7 +11,9 @@ export const StyledFooter = styled.footer`
 
 export const FooterNavList = styled.ul``
 
-export const FooterNavItem = styled.li``
+export const FooterNavItem = styled.li`
+    list-style: none;
+`
 
 export const FooterSocialIcons = styled.img`
     width: ${({$width = "logo"}) => widthVariants[$width]};
