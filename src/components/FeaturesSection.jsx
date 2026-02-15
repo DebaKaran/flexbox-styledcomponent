@@ -1,5 +1,6 @@
+import AppHighlight from './AppHighlight'
 import AppParagraph from './AppParagraph'
-import { FeatureCard, FeatureImage, FeaturesSectionWrapper, FeatureTitle } from './styled/Main.styled'
+import { FeatureCard, FeatureHeader, FeatureImage, FeaturesSectionWrapper, FeatureTitle } from './styled/Main.styled'
 
 const featureItems = [
     {
@@ -25,6 +26,13 @@ const featureItems = [
 const FeaturesSection = () => {
   return (
     <FeaturesSectionWrapper>
+         <FeatureHeader>
+            Finally, a{" "}
+            <AppHighlight variant="tertiary">
+                simple and easy
+            </AppHighlight>{" "}
+            to use journal app
+        </FeatureHeader>
         {featureItems.map(link => (
             <FeatureCard key={link.header}>
                 <FeatureTitle>{link.header}</FeatureTitle>

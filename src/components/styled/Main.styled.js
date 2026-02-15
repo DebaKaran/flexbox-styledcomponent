@@ -16,6 +16,11 @@ export const FeatureTitle = styled.h3`
     margin-bottom: 2rem;
 `;
 
+export const FeatureHeader = styled.h2`
+    text-align: center;
+    margin-bottom: 8rem;
+`
+
 export const StyledParagraph = styled.p``;
 
 export const FeatureImage = styled.img`
