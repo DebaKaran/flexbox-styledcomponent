@@ -16,3 +16,7 @@ export const FooterNavItem = styled.li``
 export const FooterSocialIcons = styled.img`
     width: ${({$width = "logo"}) => widthVariants[$width]};
 `
+
+export const FooterParagraph = styled.p`
+    font-size: 1.2rem;
+`

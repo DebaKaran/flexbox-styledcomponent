@@ -1,4 +1,4 @@
-import { FooterNavItem, FooterNavList, FooterSocialIcons, StyledFooter } from './styled/Footer.styled'
+import { FooterNavItem, FooterNavList, FooterParagraph, FooterSocialIcons, StyledFooter } from './styled/Footer.styled'
 import FooterLink from './FooterLink'
 
 const footerLinks = [
@@ -37,6 +37,9 @@ const Footer = () => {
             </FooterNavItem> 
         ))}
         </FooterNavList>
+        <FooterParagraph>
+            Made with ♥︎ in India
+        </FooterParagraph>
     </StyledFooter>
   )
 }
