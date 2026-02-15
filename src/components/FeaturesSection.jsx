@@ -26,7 +26,7 @@ const FeaturesSection = () => {
   return (
     <FeaturesSectionWrapper>
         {featureItems.map(link => (
-            <FeatureCard key={link.alt}>
+            <FeatureCard key={link.header}>
                 <FeatureTitle>{link.header}</FeatureTitle>
                 <AppParagraph>{link.paragraph}</AppParagraph>
                 <FeatureImage src={link.src} alt={link.alt} />
