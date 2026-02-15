@@ -1,7 +1,8 @@
 import AppHighlight from './AppHighlight';
 import AppParagraph from './AppParagraph';
-import Button from './Button';
 import { StyledHeader, StyledSection } from './styled/Section.styled'
+import { ActionItem, ActionList } from './styled/ActionList.styled';
+import Button from './Button';
 
 const Section = () => {
   return (
@@ -15,18 +16,18 @@ const Section = () => {
         <AppParagraph mb='5rem'>
           The ultimate bullet journal app to document, reflect, and embrace your personal journey
         </AppParagraph>
-        <ul>
-            <li>
-                <Button variant="primary" href="register.html">
-                    Get started
-                </Button>
-            </li>
-            <li>
-                <Button variant="primary-outline" href="#features">
-                    Learn more
-                </Button>
-            </li>
-        </ul>
+        <ActionList>
+            <ActionItem>
+              <Button variant="primary" href="register.html">
+                  Get started
+              </Button>
+            </ActionItem>
+            <ActionItem>
+              <Button variant="primary-outline" href="#features">
+                  Learn more
+              </Button>
+            </ActionItem>
+        </ActionList>
     </StyledSection>
   )
 }
