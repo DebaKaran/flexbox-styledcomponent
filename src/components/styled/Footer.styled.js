@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const widthVariants = {
+  social: "20px",       // default paragraph size
+  logo: "80px",
+};
+
 export const StyledFooter = styled.footer`
     text-align: center;
 `;
@@ -9,5 +14,5 @@ export const FooterNavList = styled.ul``
 export const FooterNavItem = styled.li``
 
 export const FooterSocialIcons = styled.img`
-    width: 20px;
+    width: ${({$width = "logo"}) => widthVariants[$width]};
 `

@@ -17,6 +17,7 @@ const footerSocialLinks = [
 const Footer = () => {
   return (
     <StyledFooter>
+        <FooterSocialIcons src="images/quill.svg" alt="quill logo" $width="logo"/>
         <FooterNavList>
             {footerLinks.map(link => (
             <FooterNavItem key={link.href}> 
@@ -31,7 +32,7 @@ const Footer = () => {
             {footerSocialLinks.map(link => (
             <FooterNavItem key={link.href}> 
                 <FooterLink href={link.href}>
-                    <FooterSocialIcons src={link.src} alt={link.alt}/>
+                    <FooterSocialIcons src={link.src} alt={link.alt} $width="social"/>
                 </FooterLink>
             </FooterNavItem> 
         ))}
