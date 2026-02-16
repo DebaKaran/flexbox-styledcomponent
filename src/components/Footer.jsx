@@ -1,4 +1,4 @@
-import { FooterNavItem, FooterNavList, FooterParagraph, FooterSocialIcons, StyledFooter } from './styled/Footer.styled'
+import { FooterAnchor, FooterNavItem, FooterNavList, FooterParagraph, FooterSocialIcons, StyledFooter } from './styled/Footer.styled'
 import FooterLink from './FooterLink'
 
 const footerLinks = [
@@ -17,7 +17,10 @@ const footerSocialLinks = [
 const Footer = () => {
   return (
     <StyledFooter>
-        <FooterSocialIcons src="images/quill.svg" alt="quill logo" $width="logo"/>
+        <FooterAnchor href="index.html">
+            <FooterSocialIcons src="images/quill.svg" alt="quill logo" $width="logo"/>
+        </FooterAnchor>
+        
         <FooterNavList>
             {footerLinks.map(link => (
             <FooterNavItem key={link.href}> 
