@@ -14,7 +14,10 @@ export const StyledFooter = styled.footer`
     //justify-content: space-between;
 `;
 
-export const FooterNavList = styled.ul``
+export const FooterNavList = styled.ul`
+    display: flex;
+    gap: 2rem;
+`
 
 export const FooterNavItem = styled.li`
     list-style: none;
