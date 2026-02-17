@@ -5,6 +5,9 @@ export const StyledSection = styled.section`
     text-align: center;
     margin-bottom: 10rem;
     height: calc(100vh - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 export const StyledHeader = styled.h1`
