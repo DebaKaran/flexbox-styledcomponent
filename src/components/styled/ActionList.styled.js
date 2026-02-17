@@ -4,6 +4,7 @@ export const ActionList = styled.ul`
     display: flex;
     justify-content: center;
     list-style: none;
+    gap: 2rem;
 
 `
 
