@@ -8,6 +8,7 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 `;
 
 export const StyledHeader = styled.h1`
